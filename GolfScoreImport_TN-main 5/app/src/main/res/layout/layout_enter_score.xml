@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".EnterScore">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/strokesLabel"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/strokesTxt"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tempPlayerCount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/tempPlayerCount"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/holeSwitcher">
+
+            <Button
+                android:id="@+id/tempReducePlayers"
+                style="@style/secondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_decrement"
+                android:gravity="center"
+                android:text="@string/minusTxt" />
+
+            <EditText
+                android:id="@+id/tempNumberPlayers"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:autofillHints="Enter Strokes."
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="@string/zeroTxt"
+                android:textColor="@color/black"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/tempIncreasePlayers"
+                style="@style/secondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded_increment"
+                android:gravity="center"
+                android:text="@string/plusTxt" />
+        </LinearLayout>
+
+
+        <TextSwitcher
+            android:id="@+id/holeSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingTxt"
+                style="@style/textView"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingTxt"
+                style="@style/textView"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+        </TextSwitcher>
+
+        <ImageButton
+            android:id="@+id/nextPlayerButton"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player_plus"
+            android:text="@string/next_playerTxt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
+
+        <ImageButton
+            android:id="@+id/prevPlayerButton"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/player_minus"
+            app:layout_constraintRight_toLeftOf="@id/nextPlayerButton"
+            app:layout_constraintTop_toTopOf="@id/nextPlayerButton" />
+
+        <ImageButton
+            android:id="@+id/prevHoleButton"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+
+            android:src="@drawable/hole_minus"
+            app:layout_constraintRight_toLeftOf="@id/nextHoleButton"
+            app:layout_constraintTop_toTopOf="@id/nextHoleButton" />
+
+        <ImageButton
+            android:id="@+id/nextHoleButton"
+            style="@style/primaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/hole_plus"
+            android:text="@string/next_holeTxt"
+            app:layout_constraintBottom_toTopOf="@+id/nextPlayerButton"
+            app:layout_constraintEnd_toEndOf="@+id/nextPlayerButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nextPlayerButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <Button
+            android:id="@+id/exitGameButton"
+            style="@style/blackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_gameTxt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
+
+        <TextSwitcher
+            android:id="@+id/nameSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/strokesLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/holeSwitcher"
+            app:layout_constraintVertical_bias="0.396">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingTxt"
+                style="@style/textView"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="24sp"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingTxt"
+                style="@style/textView"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="24sp"
+                android:gravity="center_horizontal" />
+        </TextSwitcher>
+
+        <TextView
+            android:id="@+id/totalscore"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
+            android:layout_marginLeft="113dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:gravity="center"
+            android:text="@string/loadingTxt"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/strokesLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameSwitcher" />
+
+        <Button
+            android:id="@+id/overviewButton"
+            style="@style/secondaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/overviewTxt"
+            app:layout_constraintBottom_toTopOf="@+id/exitGameButton"
+            app:layout_constraintEnd_toEndOf="@+id/exitGameButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/exitGameButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/primaryButton"
+        android:text="@string/save_changesTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/secondaryButton"
+        android:text="@string/Txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/strokesLabelTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/strokesTxt"
+                    android:textColor="@color/primary_dark" />
+
+                <TextView
+                    android:id="@+id/hole1View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole2View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_2"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole3View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_3"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole4View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_4"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole5View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_5"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole6View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_6"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole7View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_7"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole8View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_8"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole9View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_9"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole10View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_10"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole11View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_11"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole12View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_12"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole13View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_13"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole14View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_14"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole15View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_15"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole16View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_16"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole17View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_17"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/hole18View"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/primary_dark"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="@string/hole_18"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/listOverViewObjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

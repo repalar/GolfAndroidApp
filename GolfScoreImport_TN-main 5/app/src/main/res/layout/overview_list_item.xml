@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/primary_dark"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/strokeHolder1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder10"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder12"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder13"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder14"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder16"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder17"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/strokeHolder18"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/primary"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/loadingTxt"
+        android:textColor="@color/black" />
+</LinearLayout>
